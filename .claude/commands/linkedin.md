@@ -20,7 +20,10 @@ Pedido: $ARGUMENTS
    delas vencem este arquivo.
 3. Se `linkedin/` já tem arquivos de uma revisão anterior, mova-os para
    `linkedin/historico/AAAA-MM-DD/` (a data do `publicado.md`, ou de hoje se
-   não houver) antes de escrever qualquer coisa.
+   não houver) antes de escrever qualquer coisa — **exceto o `publicado.md`**:
+   copie-o para o histórico, mas deixe o original na raiz de `linkedin/` até o
+   Passo 8 sobrescrevê-lo. A recepção (aviso dos 90 dias) e o `/sync-perfil`
+   (reconhecer o eco do sistema) dependem de ele estar lá.
 
 ## Passo 1 — Vertente
 
@@ -101,9 +104,10 @@ Grave `linkedin/atual.md`:
 2. **Teto.** Liste os termos recorrentes que têm fato ou competência no
    perfil-mestre (`--lastro`). **Título da família só entra no `--lastro` se o
    candidato ocupou o cargo** (rubrica de LinkedIn, Headline); título não
-   ocupado é gap, mesmo com fato da função. e os itens de Completude que dependem de fato e
-   têm lastro (`--itens`: em destaque, formação, certificações, idiomas). Abertura
-   e Prova do teto: o máximo que os fatos permitem. Rode:
+   ocupado é gap, mesmo com fato da função. Liste também os itens de
+   Completude que dependem de fato e têm lastro (`--itens`: em destaque,
+   formação, certificações, idiomas). Abertura e Prova do teto: o máximo que
+   os fatos permitem. Rode:
    `python tools/score_linkedin.py teto --vertente linkedin/vertente.md --perfil linkedin/atual.md --lastro "..." --itens "..." --abertura A --prova R`
 3. **Por seção** (Headline, Sobre, cada Experiência, Competências, Em
    destaque, Configuração): o que está bom; **o que podemos mudar**, numerado,

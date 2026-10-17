@@ -1,6 +1,6 @@
 ---
 name: revisor-fatos
-description: Painel de revisão de currículo — confere que todo número tem lastro no perfil-mestre e que nenhum fato aparece duas vezes. É a trava contra invenção. Só é invocado pelo /nova-vaga, depois que o currículo já foi escrito. Não edita nada.
+description: Painel de revisão de currículo — confere que todo número tem lastro no perfil-mestre e que nenhum fato aparece duas vezes. É a trava contra invenção. Só é invocado pelo /nova-vaga e pelo /linkedin (modo LinkedIn), depois que o texto já foi escrito. Não edita nada.
 tools: Read, Grep, Glob
 ---
 
@@ -107,6 +107,10 @@ Devolva markdown, nada mais:
 ### BLOQUEIA
 - (números sem lastro, verbos inflados, divergência de data/cargo — ou
   exatamente `- nenhum`)
+
+### Conferido
+- (o que você checou e está correto, numa linha cada — ex.: "datas e cargos
+  idênticos ao perfil-mestre")
 
 ### IMPORTANTE
 - (redundância entre bullets, placeholders pendentes)

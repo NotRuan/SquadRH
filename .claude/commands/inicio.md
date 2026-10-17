@@ -48,7 +48,7 @@ comando a digitar da próxima vez.
 | Nível 1 | Opções (comando) |
 |---|---|
 | Candidatar a uma vaga | Nova vaga (`/nova-vaga`) · Exportar currículo (`/exportar`) · Carta de apresentação (`/apresentacao`) · Preparar entrevista (`/entrevista`) |
-| Meu perfil e LinkedIn | Modelar LinkedIn (`/linkedin`) · Atualizar pelo LinkedIn (`/sync-perfil`) · Atualizar estudos (`/sync-pos`, só se ligado) · Refazer primeiro acesso (`/primeiro-acesso`) |
+| Meu perfil e LinkedIn | Modelar LinkedIn (`/linkedin`) · Atualizar pelo LinkedIn (`/sync-perfil`) · Atualizar estudos (`/sync-pos`, só se ligado) |
 | Acompanhar | Registrar retorno (`/resultado`) · Ver funil (`/status`) · Radar de mercado (`/mercado`, só se ligado) |
 | Configurar | Minhas preferências · Ligar/desligar módulos · Rodar ensaio (`/ensaio`) |
 
@@ -77,6 +77,7 @@ Para "Só conhecer os comandos", mostre esta tabela:
 | `/sync-pos` | Atualizar competências pela pasta de estudos |
 | `/resultado` | Registrar o retorno de uma candidatura |
 | `/status` | Ver o funil e os fatos parados |
+| `/mercado` | (Opcional) Radar do mercado de vagas de dados |
 | `/ensaio` | Conferir se o squad ainda se comporta como deve |
 | `/inicio` | Voltar a este menu |
 

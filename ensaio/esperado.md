@@ -116,8 +116,8 @@ acionado sem candidatura anterior à empresa.
 
 ## A11 — O teto de aderência é calculado antes de escrever
 
-O Passo 1.5 do `/nova-vaga` reporta o teto antes de existir currículo, contando
-quantas obrigatórias têm lastro no perfil.
+O Passo 1.5 do `/nova-vaga` reporta o teto antes de existir currículo, pela
+fórmula da rubrica ATS contando como presente toda keyword com lastro no perfil.
 
 Com o perfil de exemplo, `SQL avançado` e `grandes volumes` são frágeis — o
 teto deve sair abaixo de 100 e o relatório deve nomear o que falta.

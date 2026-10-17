@@ -52,6 +52,7 @@ rubrica. Separe contagens do Indeed das de web; não as misture sem dizer.
 
 ## Regras
 - Você não edita `perfil/` nem `rubricas/`. Se o candidato mandar aplicar algo, é a
-  sessão principal (ou `/sync-perfil`) que aplica.
+  sessão principal que aplica, só no que ele aprovar (o `/sync-perfil` só lê o
+  export do LinkedIn; não aplica recomendação de mercado).
 - Salário só quando a fonte traz. Nunca estime.
 - Português do Brasil.

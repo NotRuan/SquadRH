@@ -104,6 +104,10 @@ Liste, pelo nome:
 - Vagas sem `status.md`, ou sem `curriculo.md`/`painel.md` e sem resultado
   `descartada` — fluxo abandonado no meio.
 - Candidaturas `aguardando` há mais de 30 dias — devem virar `sem resposta`.
+  Liste-as e pergunte se o candidato quer marcar todas agora; só com um "sim"
+  explícito, grave `Resultado: sem resposta` em cada `status.md` (data do
+  resultado em branco — não houve resposta). É o único dono dessa virada: nem
+  o `/resultado` nem a recepção a fazem sozinhos.
 - Mais de uma candidatura à mesma empresa em menos de 15 dias.
 
 ## Passo 5 — Uma recomendação, só
@@ -118,7 +122,8 @@ nenhum.
 ## Regras
 
 - **Você não edita nada** além de responder. Não altere `status.md`, currículo
-  ou perfil. Se o candidato disser o resultado de uma candidatura durante a conversa,
-  aí sim grave no `status.md` dela.
+  ou perfil. Exceções: se o candidato disser o resultado de uma candidatura
+  durante a conversa, grave no `status.md` dela; e a virada de `aguardando`
+  para `sem resposta` do Passo 4, com o "sim" dele.
 - Toda taxa vem com a fração que a gerou.
 - Português do Brasil.

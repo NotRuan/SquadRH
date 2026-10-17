@@ -5,7 +5,7 @@ description: Roda a suíte de regressão do sistema — o caso fixo do ensaio, c
 Você verifica se o sistema ainda se comporta como deve. Rode isto **depois de
 mudar qualquer rubrica, revisor ou comando**.
 
-Uma edição em `rubricas/` muda o comportamento de quatro agentes de uma vez, e
+Uma edição em `rubricas/` muda o comportamento de cinco revisores de uma vez, e
 nada mais no sistema avisa se piorou. O currículo só é conferido por julgamento
 de modelo — sem um caso fixo, uma regressão só aparece numa candidatura real.
 
@@ -102,6 +102,12 @@ Depois, confira `ensaio/pos-fiap/esperado.md` contra a fixture congelada em
 `--marcar` como o arquivo descreve, e confirme que os três comportamentos
 batem. Use um cache temporário (fora de `perfil/`) — este caso não escreve em
 `perfil/pos-fiap-cache.json`, o cache real do candidato.
+
+## Caso das ferramentas
+
+Rode `python -m pytest tools/test_recepcao.py tools/test_ler_linkedin.py tools/test_score_linkedin.py tools/test_contar_paginas.py -v`.
+Todos os testes devem passar — travam o estado da recepção, a leitura do export
+do LinkedIn, o score do `/linkedin` e a contagem de páginas do `/exportar`.
 
 ## Caso do LinkedIn
 

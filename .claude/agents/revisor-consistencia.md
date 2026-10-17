@@ -56,7 +56,8 @@ Divergência aqui é **BLOQUEIA**. O cargo dentro da experiência nunca muda
 (R6/estrutura) — só a headline do topo se adapta. Se o cargo mudou entre duas
 candidaturas à mesma empresa, é erro, não ângulo.
 
-**2. Contradição de número (com qualquer candidatura).** O mesmo fato contado
+**2. Contradição de número (com qualquer candidatura).** Roda sempre que você
+é acionado, junto com a verificação 1. O mesmo fato contado
 com números diferentes em duas vagas é **BLOQUEIA**, mesmo em empresas
 diferentes — significa que um dos dois não veio do perfil-mestre.
 

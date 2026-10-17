@@ -18,35 +18,22 @@ Acima do teto: `analista de bi` — título da família que o Fulano não ocupou
 Teto: `python tools/score_linkedin.py teto --vertente ensaio/linkedin/vertente.md --perfil ensaio/linkedin/atual.md --lastro "python,power bi,analista de dados,sql" --itens "formação" --abertura 20 --prova 15`
 → busca 40,00 · abertura 20 · prova 15 · completude 10,50 · **total 85,50**.
 
-Lastro do teto: `python` (Automação de relatórios operacionais), `power bi`
-(Migração de painéis para Power BI), `analista de dados` (cargo ocupado nas
-duas experiências), `sql` (Competências do perfil). `analista de bi` fora:
-cargo não ocupado (decisão de 16/10/2026). Itens de completude com fato:
-formação. Sem fato: certificações, idiomas, em destaque.
+Lastro do teto: `python`, `power bi`, `analista de dados` (cargo ocupado nas duas
+experiências) e `sql` (Competências do perfil). `analista de bi` fora: cargo
+não ocupado (decisão de 16/10/2026). Item de completude com fato: formação.
 
 ## O que podemos mudar
 
-**Headline**
-1. `Analista de Dados | Python · SQL · Power BI` — título ocupado + três competências recorrentes com lastro. Rende busca (+4 termos na headline) e abertura (+10).
-
-**Sobre**
-2. Abrir com cargo + a prova mais forte (3 dias → 4 horas). Rende abertura (+10).
-3. Acrescentar as outras provas com número (14 relatórios / 6 áreas; 120 mil registros / 35%; 25 painéis, semanal → diária) e a linha de competências.
-
-**Experiência — Sênior**
-4. Bullet de automação com número (3 dias → 4 horas; 14 relatórios; 6 áreas). Rende prova.
-5. Bullet do painel de entregas só com a escala (40 usuários) — resultado em aberto, ver Pendências.
-
-**Experiência — Júnior**
-6. Bullet da padronização com número (120 mil registros; 35%). Rende prova.
-7. Bullet da migração para Power BI com verbo de Contribuição (`Escopo: participação`).
-
-**Competências**
-8. Fixadas: SQL, Python, Power BI (ordem de recorrência), Automação de rotinas, Modelagem de indicadores.
-9. Tirar "Comunicação" e "Excel": nenhum dos dois está nas Competências do perfil (Excel só aparece como origem da migração).
-
-**Configuração**
-10. Banner, URL personalizada, Open to Work com "Analista de Dados", top 5 fixadas.
+1. Headline: `Analista de Dados | Python · SQL · Power BI` (título ocupado + três competências com lastro).
+2. Sobre: abrir com cargo + a prova mais forte (3 dias → 4 horas).
+3. Sobre: demais provas com número e linha de competências.
+4. Sênior: bullet de automação com número.
+5. Sênior: bullet do painel só com a escala (resultado em aberto).
+6. Júnior: bullet da padronização com número.
+7. Júnior: bullet da migração com verbo de Contribuição (`participação`).
+8. Competências fixadas: SQL, Python, Power BI, Automação de rotinas, Modelagem de indicadores.
+9. Tirar "Comunicação" e "Excel": nenhum dos dois é competência do perfil.
+10. Configuração: banner, URL, Open to Work com "Analista de Dados", top 5 fixadas.
 
 ## Gaps
 - `analista de bi` — título não ocupado. Não entra na headline.
@@ -54,10 +41,10 @@ formação. Sem fato: certificações, idiomas, em destaque.
 - Certificações, idiomas, Em destaque — sem fato.
 
 ## Pendências do perfil
-- **Resultado do painel de entregas** — o perfil tem `[FALTA MÉTRICA — qual foi o efeito no atraso ou na decisão?]`. No perfil público o bullet sai só com a escala.
+- **Resultado do painel de entregas** — `[FALTA MÉTRICA — qual foi o efeito no atraso ou na decisão?]`. No perfil público o bullet sai só com a escala.
 
 ## Vamos mudar
-- 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 (ensaio: "vamos mudar tudo")
+- 1 a 10 (ensaio: "vamos mudar tudo")
 ## Fica como está
 - —
 

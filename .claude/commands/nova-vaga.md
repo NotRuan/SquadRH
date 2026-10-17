@@ -11,8 +11,10 @@ Vaga colada: $ARGUMENTS
 ## Passo 0 — Pré-requisitos
 
 1. Se `$ARGUMENTS` estiver vazio, peça o texto da vaga e **pare** até recebê-lo.
-2. Confirme que `perfil/perfil-mestre.md` existe. Se não existir, diga ao candidato
-   para rodar `/sync-perfil` primeiro e **pare**.
+2. Confirme que `perfil/candidato.md` existe e que `perfil/perfil-mestre.md`
+   tem pelo menos um fato com `Como sei: confirmado por` (o mesmo critério da
+   recepção). Senão, diga ao candidato para rodar `/primeiro-acesso` primeiro e
+   **pare**.
 3. Leia as duas rubricas por completo: `rubricas/escrita.md` e
    `rubricas/ats.md`. As regras delas vencem qualquer instrução deste
    arquivo. (`rubricas/cultura.md` é lida pelo `revisor-recrutador` no
@@ -20,7 +22,9 @@ Vaga colada: $ARGUMENTS
 4. Crie a pasta `vagas/AAAA-MM-DD-empresa-cargo/` (data de hoje, empresa e
    cargo em minúsculas com hífen) e grave `vaga.md` com o texto recebido.
 5. **Histórico com esta empresa.** Verifique se já existe pasta anterior em
-   `vagas/` com o mesmo nome de empresa. Havendo, leia o currículo anterior e
+   `vagas/` com o mesmo nome de empresa **e com `curriculo.md`** (uma pasta
+   `descartada` só tem `vaga.md` e `status.md` — não há currículo a contradizer).
+   Havendo, leia o currículo anterior e
    avise o candidato — o novo não pode contradizer o que já foi enviado em cargo,
    datas e números. Mudança de ângulo é legítima; mudança de fato não é.
    O `revisor-consistencia` confere isso de novo no Passo 6, mas você precisa
@@ -58,14 +62,17 @@ Barato e vai na frente de propósito: escrever e revisar uma vaga que o perfil
 não atende custa quatro agentes para descobrir o que três minutos de conta já
 diziam.
 
-Calcule o **teto de aderência**: das keywords obrigatórias da vaga, quantas têm
-lastro em algum fato do `perfil-mestre.md` — presentes ou não no currículo, que
-ainda não existe. É o melhor score que esta vaga pode alcançar.
+Calcule o **teto de aderência** com a fórmula da rubrica ATS ("Score de match",
+inclusive a redistribuição de peso quando uma lista estiver vazia), contando
+como "presente" toda keyword das três listas que tenha lastro em algum fato do
+`perfil-mestre.md` — estando ou não no currículo, que ainda não existe. É o
+melhor score que esta vaga pode alcançar, e é na mesma escala N/100 dos limites
+abaixo.
 
 Reporte em duas linhas:
 
-> Teto de aderência: N/100 — X de Y obrigatórias têm lastro no perfil.
-> Sem lastro: `termo`, `termo`, `termo`.
+> Teto de aderência: N/100 — X de Y obrigatórias, X de Y desejáveis e X de Y de
+> contexto têm lastro no perfil. Sem lastro: `termo`, `termo`, `termo`.
 
 - **Teto abaixo de 55:** pare e pergunte se vale seguir. Mostre o que falta.
   O candidato decide — pode haver motivo que não está na conta (a empresa, o time, o
@@ -191,6 +198,10 @@ cargo, datas e ângulo contra o que aquele recrutador já viu, e a densidade de
 candidaturas. Sem candidatura anterior, ele gasta a leitura de cinco
 currículos para confirmar o que o Fatos já garantiu.
 
+Consequência aceita: sem candidatura anterior à empresa, a checagem de número
+entre empresas diferentes também não roda — ela cabe ao `revisor-fatos`, que
+garante o lastro de todo número no perfil-mestre.
+
 Sem candidatura anterior à empresa, escreva você mesmo a seção no
 `painel.md`, no lugar dele:
 
@@ -233,6 +244,12 @@ nada foi aplicado:
 - Aplicado: (achado — revisor — o que mudou)
 - Recusado: (achado — revisor — motivo dado pelo candidato, ou "sem motivo")
 ```
+
+**Um BLOQUEIA só conta como resolvido se aparecer em "Aplicado"** — com o
+prefixo `BLOQUEIA resolvido:` e o que mudou (número confirmado e registrado no
+perfil-mestre com a data, ou número removido). O `painel.md` guarda o
+BLOQUEIA verbatim; é este registro que o `/exportar` lê para saber que ele foi
+tratado. BLOQUEIA recusado ou sem registro continua bloqueando.
 
 É a única memória do que o candidato rejeita. Sem ela, um tipo de sugestão recusado
 em toda vaga continua sendo feito em toda vaga, e ninguém percebe que a

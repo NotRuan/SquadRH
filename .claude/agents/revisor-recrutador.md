@@ -78,6 +78,10 @@ Devolva markdown, nada mais:
 ### BLOQUEIA
 - (achados que impedem o envio — ou exatamente `- nenhum`)
 
+### Conferido
+- (o que você checou e está correto, numa linha cada — ex.: "o nome domina o
+  topo")
+
 ### IMPORTANTE
 - (achados que valem corrigir antes de enviar)
 

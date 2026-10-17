@@ -28,6 +28,13 @@ Procure `[FALTA MÉTRICA]` no texto. Se houver:
 Leia o `painel.md` da mesma pasta. Se houver item **BLOQUEIA** sem resolução
 registrada, pare e reporte. Não exporte por cima de um bloqueio.
 
+O `painel.md` guarda o BLOQUEIA verbatim; a resolução fica na seção final
+`## Aplicado / recusado`, em um item `BLOQUEIA resolvido: ...` que nomeia o
+achado (Passo 7 do `/nova-vaga`). BLOQUEIA com esse registro está resolvido;
+sem registro, ou listado como recusado, continua bloqueando. Painéis
+anteriores ao registro com prefixo: aceite como resolvido o BLOQUEIA que a
+seção "Aplicado" nomeia claramente, e na dúvida pergunte ao candidato.
+
 Item de BLOQUEIA é qualquer linha da seção diferente de `- nenhum`. Painéis
 anteriores a 16/10/2026 podem trazer confirmações dentro da seção ("idêntico
 em todos", "coluna única, conforme"): leia o conteúdo antes de travar — o que
@@ -60,15 +67,16 @@ Salve como `curriculo.docx` na pasta da vaga.
 Converta com o `soffice.py` que a própria skill `docx` traz embutido (não há
 LibreOffice solto no PATH). Salve como `curriculo.pdf` na mesma pasta.
 
-## Passo 5 — Verificar uma página de verdade
+## Passo 5 — Verificar o limite de páginas de verdade
 
-Rode:
+O limite é o `Limite de páginas do currículo` do `perfil/candidato.md` (R4) —
+1 ou 2. Rode, com `N` = esse valor:
 ```
-python "tools/contar_paginas.py" "CAMINHO/curriculo.pdf" --max 1
+python "tools/contar_paginas.py" "CAMINHO/curriculo.pdf" --max N
 ```
 
 - Saída `0` → pronto.
-- Saída `1` → **não** encolha a fonte para caber. Reporte ao candidato o que sobrou e
+- Saída `1` → passou do limite. **Não** encolha a fonte para caber. Reporte ao candidato o que sobrou e
   proponha cortes concretos, na ordem: bullets mais fracos do cargo mais
   antigo, depois competências menos relevantes para a vaga, depois a terceira
   linha do resumo. Espere a decisão dele.
