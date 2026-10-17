@@ -1,0 +1,28 @@
+# Exports do LinkedIn contêm dados pessoais — nunca versionar
+dados/linkedin/
+*.zip
+
+# Derivados regeneráveis
+*.docx
+*.pdf
+
+__pycache__/
+
+# Cache de testes
+.pytest_cache/
+
+# Sobras de extracao de PDF durante a verificacao de paginas
+vagas/*/page*.txt
+
+# logs das rodadas automáticas do /mercado
+mercado/logs/
+
+# Dados de quem usa o squad — ficam só na máquina de cada um
+perfil/perfil-mestre.md
+perfil/candidato.md
+perfil/pos-fiap-cache.json
+vagas/*/
+linkedin/
+base/curriculo.md
+mercado/snapshots/*.md
+mercado/relatorio-*.md

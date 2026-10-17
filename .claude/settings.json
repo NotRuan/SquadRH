@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/tools/recepcao.py\" --raiz \"$CLAUDE_PROJECT_DIR\" --hook",
+            "timeout": 30,
+            "statusMessage": "Preparando a recepção do squad..."
+          }
+        ]
+      }
+    ]
+  }
+}
